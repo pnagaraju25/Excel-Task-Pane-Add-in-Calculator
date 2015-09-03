@@ -1,5 +1,8 @@
 # Add-in-Excel-TaskPane-Calculator
 
+https://cloud.githubusercontent.com/assets/13442590/9670410/4762bd32-5241-11e5-89a8-ce0f1ce583dd.png
+![icon3](https://cloud.githubusercontent.com/assets/13442590/9670410/4762bd32-5241-11e5-89a8-ce0f1ce583dd.png)
+
 This sample showcases a simple add-in for Office Excel as a task pane. As user type in this Calculator, this Add-In will do the calculation and generate the formula in Excel sheet.
 
 /* The easiest way to run this sample is to open it in the playground for Office Add-ins: http://aka.ms/Fb7hmn. Click the Run Project icon to launch the sample in Excel Online (you will need to login using a Microsoft account). */
