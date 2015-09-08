@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+   
+</head>
+<body>
+    <div class="padding">
+        <h1>Calculator</h1>
+    </div>   
+    <div>
+        <div class="resultCommon resC">
+            <div class="resultCommon resI">
+                <div class="resultBox">
+                    <span class="resultCommon nowrap" id="result">0<span class="resultCommon resGRB"></span></span>
+                </div>
+            </div>
+        </div>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input class="clearBtn commonBtn" id="clear" type="button" value="C">
+                    </td>
+                    <td>
+                        <input title="Back" class="backBtn commonBtn" id="back" type="button">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbSeven" type="button" value="7" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbEight" type="button" value="8" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbNine" type="button" value="9" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="operatorBtn commonBtn" id="opDiv" type="button" value="÷">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbFour" type="button" value="4" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbFive" type="button" value="5" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbSix" type="button" value="6" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="operatorBtn commonBtn" id="opPro" type="button" value="×">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbOne" type="button" value="1" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbTwo" type="button" value="2" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbThree" type="button" value="3" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="operatorBtn commonBtn" id="opSub" type="button" value="−">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="numberBtn commonBtn" id="nbZero" type="button" value="0" onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="operatorBtn commonBtn" id="nbDeci" type="button" value="." onclick="getNumberInput(this)">
+                    </td>
+                    <td>
+                        <input class="equalBtn commonBtn" id="opEquals" type="button" value="=">
+                    </td>
+                    <td>
+                        <input class="operatorBtn commonBtn" id="opAdd" type="button" value="+">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

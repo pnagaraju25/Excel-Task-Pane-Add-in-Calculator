@@ -1,0 +1,176 @@
+﻿/* Page-specific styling */
+
+h1 {
+    color: black;
+    font: bold;
+    font-size: xx-large;
+    background-color: white;
+}
+
+.numberBtn {
+    background-color: rgb(209, 209, 209);
+    border-bottom-color: rgb(193, 193, 193);
+    border-left-color: rgb(193, 193, 193);
+    border-right-color: rgb(193, 193, 193);
+    border-top-color: rgb(193, 193, 193);    
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-size: 24px;
+    font-family: "Segoe UI", Arial, Helvetica, Sans-Serif;    
+    line-height: 29px;
+}
+
+.clearBtn {
+    background-color: rgb(238, 238, 238);
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-top-color: rgb(221, 221, 221);    
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Segoe UI", Arial, Helvetica, Sans-Serif;
+    line-height: 23px;
+    padding-bottom: 0px;
+}
+
+.backBtn {
+    background-color: rgb(238, 238, 238);
+    background-image: url("/Images/BackKey.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 28px;
+    background-repeat: no-repeat;
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-top-color: rgb(221, 221, 221);
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.operatorBtn {
+    background-color: rgb(238, 238, 238);
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-top-color: rgb(221, 221, 221);
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+    font-family: "Segoe UI", Arial, Helvetica, Sans-Serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.equalBtn {
+    background-color: rgb(0, 114, 197);
+    border-bottom-color: rgb(0, 114, 197);
+    border-left-color: rgb(0, 114, 197);
+    border-right-color: rgb(0, 114, 197);
+    border-top-color: rgb(0, 114, 197);
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+    font-family: "Segoe UI", Arial, Helvetica, Sans-Serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.commonBtn {     
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;   
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-spacing: 0px 0px;
+    border-top-style: solid;
+    border-top-width: 1px;    
+    direction: ltr;   
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    visibility:visible;
+    height: 40px;
+    width: 65px;
+    word-wrap: break-word;
+}
+
+.nowrap {
+    color: rgb(17, 17, 17);
+    float: right;    
+    white-space: nowrap;
+}
+
+.resultCommon {
+    border-collapse: collapse;
+    border-spacing: 0px 0px;    
+    direction: ltr;
+    font-family: "Segoe UI Light", Arial, Helvetica, Sans-Serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 48px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    visibility: visible;
+}
+
+.resGRB {   
+    color: rgb(204, 204, 204);    
+    white-space:nowrap;
+}
+
+.resI {
+    color: rgb(17, 17, 17);
+    height: 52.2px;
+}
+
+.resC {
+    color: rgb(17, 17, 17);
+    height: 58px;
+    padding-bottom: 8px;
+}
+
+
+.resultBox {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;   
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-spacing: 0px 0px;
+    border-top-style: solid;
+    border-top-width: 1px;    
+    direction: ltr;   
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    visibility: visible;
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(0, 114, 197);
+    border-left-color: rgb(0, 114, 197);
+    border-right-color: rgb(0, 114, 197);
+    border-top-color: rgb(0, 114, 197);
+    color: rgb(17, 17, 17);
+    font-family: "Segoe UI Light", Arial, Helvetica, Sans-Serif;
+    font-size: 40px;
+    height: 52.2px;
+    line-height: 48px;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-top: 3px;
+}
