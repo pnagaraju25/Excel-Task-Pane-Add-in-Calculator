@@ -6,8 +6,11 @@
 
 ##Run in the Office Playground
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
+
 1. Log in using a Microsoft account.
+
 2. Go to [this page](http://aka.ms/Vnp9gk).
+
 3. Click the Run Project icon to launch the sample in Excel Online.
 
 
