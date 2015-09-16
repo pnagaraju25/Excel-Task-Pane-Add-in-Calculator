@@ -7,11 +7,11 @@
 ##Run in the Office Playground
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
 
-1. Log in using a Microsoft account.
+1. Go to http://aka.ms/Vnp9gk
 
-2. Go to [this page](http://aka.ms/Vnp9gk).
+2. Log in using a Microsoft account.
 
-3. Click the Run Project icon to launch the sample in Excel Online.
+3. Click the Run Project icon (Play button) to launch the sample in Excel Online.
 
 
 ##Run in Excel 2013 Desktop
