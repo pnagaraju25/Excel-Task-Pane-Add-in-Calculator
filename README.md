@@ -2,8 +2,6 @@
 
 This example shows a simple add-in for Office Excel as a task pane. As you type in this Calculator, it performs the calculation and generates the corresponding formula in an Excel spreadsheet.
 
-![picture1](https://cloud.githubusercontent.com/assets/13442590/9670550/e81fdde0-5241-11e5-8caf-8370f4204fa2.png)
-
 ##Run in the Office Playground
 
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
