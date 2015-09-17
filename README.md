@@ -2,7 +2,7 @@
 
 This example shows a simple add-in as an Office Excel task pane. As you type in this Calculator, it performs the calculation and generates the corresponding formula in an Excel spreadsheet.
 
-![calculator](https://cloud.githubusercontent.com/assets/13560879/9943083/0fbb24ca-5d34-11e5-971c-d49a979c7829.png)
+![calculator](https://cloud.githubusercontent.com/assets/13560879/9943172/abf20b4c-5d34-11e5-93de-4e3a233cbf7c.png)
 
 ##Run in the Office Playground
 
