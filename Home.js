@@ -1,4 +1,4 @@
-﻿ /// <reference path="../App.js" />
+ /// <reference path="../App.js" />
 
 var calComp = true;
 
@@ -129,7 +129,7 @@ function getNumberInput(data) {
             posIndex++;
             Office.context.document.goToByIdAsync(currentPosArray[posIndex], Office.GoToType.NamedItem, function (asyncResult) {
                 if (asyncResult.status == 'failed') {
-                    app.showNotification('Unable to navigate back to the row under the last operand, please click C to restart. Detailed error: ' + asyncResult.error.message);
+                    app.showNotification('Cannot navigate back to the row under last operand, please click C to restart. Detailed error: ' + asyncResult.error.message);
                 }
             });
 
@@ -163,13 +163,13 @@ function getNumberInput(data) {
             posIndex++;
             Office.context.document.goToByIdAsync(currentPosArray[posIndex], Office.GoToType.NamedItem, function (asyncResult) {
                 if (asyncResult.status == "failed") {
-                    app.showNotification('Unable to navigate back to the row under the last operand. Please click C to restart. Detailed error: ' + asyncResult.error.message);
+                    app.showNotification('Cannot navigate back to the row under last operand, please click C to restart. Detailed error: ' + asyncResult.error.message);
                 } else {
-                    var resultFormular = getResultFormuar(posIndex, operatorsArray);
+                    var resultFormula = getResultFormula(posIndex, operatorsArray);
 
-                    Office.context.document.setSelectedDataAsync(resultFormular, function (asyncResult) {                        
+                    Office.context.document.setSelectedDataAsync(resultFormula, function (asyncResult) {                        
                         if (asyncResult.status == "failed") {
-                            app.showNotification("Formula wasn't able to write in the cell one row under the same column of the last operand. Please make sure the cell is not write protected, and click C to restart. Detailed error: " + asyncResult.error.message);
+                            app.showNotification("Formula wasn't able to write in the cell one row under the same column of last operand. Please make sure the cell is not written protected and click C to restart. Detailed error: " + asyncResult.error.message);
                         } else {
                             currentPosArray = [];
                             posIndex = 0;
@@ -179,7 +179,7 @@ function getNumberInput(data) {
                             currentData = '';
                             Office.context.document.getSelectedDataAsync('text', function (asyncResult) {
                                 if (asyncResult.status == "failed") {
-                                    app.showNotification("Didn't get the calculation result from current cell. The data shown in the task pane may be not an accurate calculation result. Detailed error: " + asyncResult.error.message);
+                                    app.showNotification("Didn't get the calculation result from current cell. The data shown in the task pane may be not accurate calculation result. Detailed error: " + asyncResult.error.message);
                                 } else {
                                     // round up the value to two decimal places to show in the task pane if the result is decimal.
                                     var temp = String(asyncResult.value);
@@ -233,27 +233,27 @@ function getNumberInput(data) {
         }
         Office.context.document.bindings.addFromSelectionAsync("text", { id: bindingId }, function (asyncResult) {
             if (asyncResult.status == "failed") {
-                app.showNotification('Error when trying to bind to the first operand. Please click C to restart. Detailed error: ' + asyncResult.error.message);
+                app.showNotification('Error when trying to bind to the first operand. Please click C to restart. Detialed error: ' + asyncResult.error.message);
             }
         });
     }
 
     function getIndex(callback) {
-        // input =CELL("address") formular to current selection
+        // input =CELL("address") formula to current selection
         Office.select("bindings#firstOperand").setDataAsync('=CELL("address")', function (asyncResult) {
             if (asyncResult.status == "failed") {
-                app.showNotification("Error when trying to enter =CELL(\"address\") into the first operator cell. Please make sure the cell is not write protected, and click C to restart. Detialed error: " + asyncResult.error.message);
+                app.showNotification("Error when trying to input =CELL(\"address\") into the first operator cell. Please make sure the cell is not written protected and click C to restart. Detialed error: " + asyncResult.error.message);
             } else {
                 //get the coordinates
                 Office.select("bindings#firstOperand").getDataAsync(function (asyncResult) {
                     if (asyncResult.status == "failed") {
-                        app.showNotification("Error when trying to get the cell's coordinates using formula = CELL(\"address\"). Please click C to restart. Detailed error: " + asyncResult.error.message);
+                        app.showNotification("Error when trying to get the cell's coordiantes using formula = CELL(\"address\"). Please click C to restart. Detailed error: " + asyncResult.error.message);
                     } else {
                         currentPosArray[posIndex] = asyncResult.value;
                         //put data back
                         Office.select("bindings#firstOperand").setDataAsync(currentData, function (asyncResult) {
                             if (asyncResult.status == "failed") {
-                                app.showNotification("Error when trying to put the first operand back into the current cell. Please make sure the cell is not write protected, and click C to restart. Detialed error: " + asyncResult.error.message);
+                                app.showNotification("Error when trying to put the first operand back to current cell. Please make sure the cell is not written protected and click C to restart. Detialed error: " + asyncResult.error.message);
                             } else {
                                 if (callback != undefined) {
                                     callback();
@@ -273,7 +273,7 @@ function getNumberInput(data) {
             } else {
                 Office.context.document.setSelectedDataAsync(data, function (asyncResult) {
                     if (asyncResult.status == "failed") {
-                        app.showNotification('Error when trying to set the user input or current data into the current active cell. Please click C to restart. Detailed error: ' + asyncResult.error.message);
+                        app.showNotification('Error when trying to set the user input or current data to the current active cell. Please click C to restart. Detailed error: ' + asyncResult.error.message);
                     }
                 });
             }
@@ -287,8 +287,8 @@ function getNumberInput(data) {
         return newPos;
     }
 
-    function getResultFormuar(i, ops) {
-        var resultFormular = '=';
+    function getResultFormula(i, ops) {
+        var resultFormula = '=';
         var sumEnabled = true;
         var productEnabled = true;
 
@@ -300,7 +300,7 @@ function getNumberInput(data) {
                         break;
                     }
                 }
-                resultFormular += 'PRODUCT(' + reformatPos(currentPosArray[temp]) + ':' + reformatPos(currentPosArray[k]) + ')';
+                resultFormula += 'PRODUCT(' + reformatPos(currentPosArray[temp]) + ':' + reformatPos(currentPosArray[k]) + ')';
             } else if (sumEnabled && (ops[k] == '+')) {
                 var temp = k;
                 for (k = k + 1; k < ops.length; k++) {
@@ -315,23 +315,23 @@ function getNumberInput(data) {
 
                 if (k > temp) {
 
-                    resultFormular += 'SUM(' + reformatPos(currentPosArray[temp]) + ':' + reformatPos(currentPosArray[k]) + ')';
+                    resultFormula += 'SUM(' + reformatPos(currentPosArray[temp]) + ':' + reformatPos(currentPosArray[k]) + ')';
                 } else {
-                    resultFormular += reformatPos(currentPosArray[k]);
+                    resultFormula += reformatPos(currentPosArray[k]);
                 }
             } else {
-                resultFormular += reformatPos(currentPosArray[k]);
+                resultFormula += reformatPos(currentPosArray[k]);
             }
 
             if (k < ops.length) {
-                resultFormular += ops[k];
+                resultFormula += ops[k];
                 sumEnabled = ops[k] == '+';
                 productEnabled = ops[k] != '/';
             } else {
                 break;
             }
         }
-        return resultFormular;
+        return resultFormula;
     }
 
     function reformatPos(position) {
