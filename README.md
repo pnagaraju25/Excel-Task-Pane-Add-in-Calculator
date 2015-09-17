@@ -26,12 +26,12 @@ For more information, please see: https://msdn.microsoft.com/EN-US/library/offic
 
 ##Run in Excel Online
 
-To run the sample in Excel Online:
+To run this sample in Excel Online:
 
 **Note:** You will need a subscription to Office 365. If you don't have a subscription, obtain a free account for 30 days from https://portal.microsoftonline.com/Signup/MainSignUp.aspx?OfferId=6881A1CB-F4EB-4db3-9F18-388898DAF510&DL=DEVELOPERPACK
 
 1. You can host these files locally (on localhost), or online, such as on AWS, Azure, Heroku, and so forth. 
-2. Edit the manifest file Calculator.xml and change the DefaultValue of the SourceLocation to the URL where the home.html file is hosted.
+2. Edit the manifest file Calculator.xml and change the DefaultValue of the SourceLocation to the URL where the Home.html file is hosted.
 3. Go to the Office 365 portal (https://portal.office.com) and click on Admin in the app launcher on the top left hand corner.
 4. Select SharePoint > apps > App Catalog > Apps for Office.
 5. Select the "+" button to add a new add-in, and choose Calculator.xml from your local directory. Press OK and the add-in will install.
