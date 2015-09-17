@@ -4,13 +4,13 @@ This example shows a simple add-in as an Office Excel task pane. As you type in 
 
 ![calculator](https://cloud.githubusercontent.com/assets/13560879/9946280/1f48fe5e-5d47-11e5-9094-3be2c6706909.png)
 
-##Run in the Office Playground
+##Run in Office Playground
 
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
 
 1. Go to http://aka.ms/Vnp9gk
 2. Log in using a Microsoft account.
-3. Click the Run Project icon (*play* button) to launch the sample in Excel Online.
+3. Click the Run Project icon to launch the sample in Excel Online.
 
 
 ##Run in Excel 2013 Desktop
@@ -19,8 +19,8 @@ To run this sample in Excel 2013 Desktop:
 
 1. Host these files on a local network share. For more information, please see: https://msdn.microsoft.com/EN-US/library/office/fp123503.aspx
 2. Open up an Office app (Excel, Word or PowerPoint), open a document, and then select File > Options > Trust Center > Trust Center Settings > Trusted App Catalogs.
-3. Type the location of the directory on your local network share into the Catalog Url text field, and click Add Catalog. Make sure the Show in Menu check box is selected.
-4. Click OK. Close the Office app and launch it again so the changes take effect.
+3. Type the location of the directory on your local network share into the Catalog Url text field, and click Add Catalog. Make sure the new location's Show in Menu check box is selected.
+4. Click OK. Close the Office app and launch it again, so the changes take effect.
 5. Go to Insert > My Apps > Shared Folder and select Calculator Add-in, and then click Insert. If you don't see the add-in, click Refresh.
 6. The add-in's task pane opens next to your document.
 
