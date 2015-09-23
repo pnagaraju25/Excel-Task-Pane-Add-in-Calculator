@@ -34,8 +34,10 @@ To run this sample in Excel Online:
 2. Edit the manifest file Calculator.xml and change the DefaultValue of the SourceLocation to the URL where the Home.html file is hosted.
 3. Go to the Office 365 portal (https://portal.office.com) and click on Admin in the app launcher on the top left hand corner.
 4. Select SharePoint > apps > App Catalog > Apps for Office.
-5. Select the "+" button to add a new add-in, and choose Calculator.xml from your local directory. Press OK and the add-in will install.
+5. Select the "+" button to add a new add-in, and choose Calculator.xml from its directory. Press OK and the add-in will install.
 6. Open the app launcher from the top left hand corner and select Excel Online.
-7. When the Excel Online app opens, go to Insert > Apps for Office and select Calculator under My Organization. If you don't see the add-in, press Refresh. Press Insert and the add-in should appear.
+7. When the Excel Online app opens, open a blank spreadsheet, then go to Insert > Office Add-ins and select Calculator under My Organization. If you don't see the add-in, press Refresh. Press Insert and the add-in should appear.
 
-For more information on publishing Office Add-ins, please see: https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx
+##Additional resources
+
+[Office Add-in publishing](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx)
