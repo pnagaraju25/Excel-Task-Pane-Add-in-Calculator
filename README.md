@@ -1,4 +1,4 @@
-# Excel Add-in Calculator 
+# Excel Add-in Calculator
 
 This example shows a simple add-in that runs in an Office Excel task pane. As you type in this Calculator, it puts that data into cells in an Excel spreadsheet, and then generates the corresponding formula.
 
@@ -6,13 +6,9 @@ This example shows a simple add-in that runs in an Office Excel task pane. As yo
 
 ### Table of Contents
 - [Overview](#overview)
-
 - [Run in Office Playground](#run-in-office-playground)
-
 - [Run in Excel 2013 Desktop](#run-in-excel-2013-desktop)
-
 - [Run in Excel Online](#run-in-excel-online)
-
 - [Additional resources](#additional-resources)
 
 ##Overview
