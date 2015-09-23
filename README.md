@@ -21,7 +21,7 @@ This add-in reads its input from a set of number and operator keys, each defined
 
 This simple add-in project is in four files:
 
-- The Office add-in manifest file Calculator.xml, which contains the values for the app name, location, and type. To determine the Office-specific values, see [Office Add-in publishing](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx).
+- The Office add-in manifest file Calculator.xml, which contains the values for the app name, location, and type. To determine the Office-specific values, see [Office Add-ins XML manifest](https://msdn.microsoft.com/EN-US/library/office/fp161044.aspx).
 - The cascading style sheet Home.css, which defines the look of the app.
 - The UI page Home.html, which defines the task pane's contents.
 - The JavaScript source file Home.js, which defines the processing for each of Home.html's table cells, and sends the data to Excel.
