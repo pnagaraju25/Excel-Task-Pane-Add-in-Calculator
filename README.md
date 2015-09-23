@@ -19,6 +19,14 @@ This example shows a simple add-in that runs in an Office Excel task pane. As yo
 
 This add-in reads its input from a set of number and operator keys, each defined in an HTML table cell. Each time you enter a number and press the Enter key, that number is entered into an Excel spreadsheet cell and the Excel cursor moves down one row. Clicking on an operator (such as "+") and then equals ("=") generates a formula (in this case a SUM) that is entered into the next cell down.
 
+This simple add-in project is in four files:
+
+- The Office add-in manifest file Calculator.xml, which contains the values for the app name, location, and type. To determine the Office-specific values, see [Office Add-in publishing](https://msdn.microsoft.com/EN-US/library/office/fp123517.aspx).
+- The cascading style sheet Home.css.
+- The UI page Home.html, which defines the look of the task pane's contents.
+- The code itself is in Home.js.
+
+
 ##Run in Office Playground
 
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
