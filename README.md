@@ -1,10 +1,12 @@
 # Calculator Add-in as an Excel Task Pane
 
-This example shows a simple add-in as an Office Excel task pane. As you type in this Calculator, it performs the calculation and generates the corresponding formula in an Excel spreadsheet.
+This example shows a simple add-in as an Office Excel task pane. As you type in this Calculator, it puts that data into cells in an Excel spreadsheet, and then generates the corresponding formula.
 
 ![excelonlinesm](https://cloud.githubusercontent.com/assets/13560879/9948988/50da3012-5d5d-11e5-97ed-c3d9c0804ec5.png)
 
 ### Table of Contents
+- [Overview](#overview)
+
 - [Run in Office Playground](#run-in-office-playground)
 
 - [Run in Excel 2013 Desktop](#run-in-excel-2013-desktop)
@@ -12,6 +14,10 @@ This example shows a simple add-in as an Office Excel task pane. As you type in 
 - [Run in Excel Online](#run-in-excel-online)
 
 - [Additional resources](#additional-resources)
+
+##Overview
+
+This add-in reads its input from a set of number and operator keys, each defined in an HTML table cell. Each time you enter a number and press the Enter key, that number is entered into an Excel spreadsheet cell and the Excel cursor moves down one row. Clicking on an operator (such as "+") and then equals ("=") generates a formula (in this case a SUM) that is entered into the next cell down.
 
 ##Run in Office Playground
 
