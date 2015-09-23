@@ -4,6 +4,15 @@ This example shows a simple add-in as an Office Excel task pane. As you type in 
 
 ![excelonlinesm](https://cloud.githubusercontent.com/assets/13560879/9948988/50da3012-5d5d-11e5-97ed-c3d9c0804ec5.png)
 
+### Table of Contents
+- [Run in Office Playground](#run-in-office-playground)
+
+- [Run in Excel 2013 Desktop](#run-in-excel-2013-desktop)
+
+- [Run in Excel Online](#run-in-excel-online)
+
+- [Additional resources](#additional-resources)
+
 ##Run in Office Playground
 
 The easiest way to run this sample is to open it in the playground for Office Add-ins: 
