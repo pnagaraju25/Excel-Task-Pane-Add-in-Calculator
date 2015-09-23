@@ -1,6 +1,6 @@
-# Calculator Add-in as an Excel Task Pane
+# Excel Add-in Calculator 
 
-This example shows a simple add-in as an Office Excel task pane. As you type in this Calculator, it puts that data into cells in an Excel spreadsheet, and then generates the corresponding formula.
+This example shows a simple add-in that runs in an Office Excel task pane. As you type in this Calculator, it puts that data into cells in an Excel spreadsheet, and then generates the corresponding formula.
 
 ![excelonlinesm](https://cloud.githubusercontent.com/assets/13560879/9948988/50da3012-5d5d-11e5-97ed-c3d9c0804ec5.png)
 
