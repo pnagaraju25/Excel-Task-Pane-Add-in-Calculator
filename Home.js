@@ -207,7 +207,7 @@ function getNumberInput(data) {
         operatorsIndex = 0;
         currentData = '';
         textBox.innerText = '0';
-        Office.context.document.setSelectedDataAsync('', function (asynResult) {
+        Office.context.document.setSelectedDataAsync('', function (asyncResult) {
             Office.context.document.bindings.releaseByIdAsync(bindingId); 
         });               
     }
@@ -226,7 +226,7 @@ function getNumberInput(data) {
         }
     }
 
-    // Unitities 
+    // Utilities 
     function bindData(bindingId) {
         if (bindingId == undefined) {
             bindingId = 'mybinding';
@@ -269,7 +269,7 @@ function getNumberInput(data) {
     function autoNaviAndSet(data) {
         Office.context.document.goToByIdAsync(currentPosArray[posIndex], Office.GoToType.NamedItem, function (asyncResult) {
             if (asyncResult.status == "failed") {
-                app.showNotification('Error when trying auto navigate back to one row under the same column of the previous operation cell. Please click C to restart. Detailed error: ' + asyncResult.error.message);
+                app.showNotification('Error when trying to auto-navigate back to one row under the same column of the previous operation cell. Please click C to restart. Detailed error: ' + asyncResult.error.message);
             } else {
                 Office.context.document.setSelectedDataAsync(data, function (asyncResult) {
                     if (asyncResult.status == "failed") {
