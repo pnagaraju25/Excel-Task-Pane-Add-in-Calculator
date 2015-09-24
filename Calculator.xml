@@ -7,7 +7,7 @@
   <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Calculator" />
-  <Description DefaultValue="As user type in this Calculator, will do the calculation in Excel sheet and generate the formular." />
+  <Description DefaultValue="As you type in this Calculator, it will do the calculation in an Excel spreadsheet and generate the formula." />
   <IconUrl DefaultValue="https://calculatorexceltaskpaneladdin.azurewebsites.net/Images/iconSmall.png" />
   <HighResolutionIconUrl DefaultValue="https://calculatorexceltaskpaneladdin.azurewebsites.net/Images/iconLarge.png" />
   <Hosts>
